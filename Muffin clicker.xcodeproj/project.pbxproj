@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C7E206E83077E38A00BADF7E /* Build configuration list for PBXProject "Maffin clicker" */;
+			buildConfigurationList = C7E206E83077E38A00BADF7E /* Build configuration list for PBXProject "Muffin clicker" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7E206E83077E38A00BADF7E /* Build configuration list for PBXProject "Maffin clicker" */ = {
+		C7E206E83077E38A00BADF7E /* Build configuration list for PBXProject "Muffin clicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7E206F63077E38A00BADF7E /* Debug */,
