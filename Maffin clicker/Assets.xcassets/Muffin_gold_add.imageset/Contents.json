@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "Muffin_gold.png",
+      "filename" : "Muffin_gold@2x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Muffin_gold@2x.png",
+      "filename" : "Muffin_gold@3x 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -19,5 +19,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

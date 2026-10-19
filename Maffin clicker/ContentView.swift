@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+
     @State private var showList = false
+
     @State private var clicks = 0
+
     @State private var currentMuffin = Image("Muffin_vanilla")
+
     @State private var price = "50 кликов"
+
     var body: some View {
         ZStack {
             VStack {
@@ -26,6 +31,18 @@ struct ContentView: View {
                     } else if clicks == 200 {
                         currentMuffin = Image("Muffin_berry")
                         price = "500 кликов"
+                    } else if clicks == 500 {
+                        currentMuffin = Image("Muffin_universal")
+                        price = "1000 кликов"
+                    } else if clicks == 1000 {
+                        currentMuffin = Image("Muffin_choco-berry")
+                        price = "2000 кликов"
+                    } else if clicks == 5000 {
+                        currentMuffin = Image("Muffin_what")
+                        price = "10000 кликов"
+                    } else if clicks == 10000 {
+                        currentMuffin = Image("Muffin_universe")
+                        price = "ЭТО МАКСИМУМ"
                     }
                 }
                 .frame(width: 400, height: 70)
@@ -74,7 +91,7 @@ struct ContentView: View {
                 .shadow(radius: 6)
 
                     .sheet(isPresented: $showList) {
-                        Text("Маффины")
+                        MuffinChoice(tap: $clicks, nowMuffin: $currentMuffin, cost: $price)
                     }
             }
         }
